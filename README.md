@@ -1,6 +1,6 @@
 # JavaScript-Interview-Question
 
-##1) 2nd smallest element of an unsorted array. 
+## Question 1. 2nd smallest element of an unsorted array. 
 
 ### Answer 
 ```
@@ -9,7 +9,7 @@ var findSmallest = (arr,k)=>{
   return arr= k>0?arr[k-1]:"Value of should be greater than 0"
 }
 ```
-##2)2nd smallest element of a sorted rotated array.
+## Question 2. 2nd smallest element of a sorted rotated array.
 ### Answer 
 ```
 var findMin = (arr,low,high)=>{
@@ -34,7 +34,7 @@ var findMin = (arr,low,high)=>{
   
 }
 ```
-##3) First unique character of a string.
+## Question. 3 First unique character of a string.
 
 ### Answer 
 ```

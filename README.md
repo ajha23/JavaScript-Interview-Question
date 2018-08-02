@@ -1,6 +1,6 @@
 # JavaScript-Interview-Question
 
-## Question 1. 2nd smallest element of an unsorted array. 
+## Question 1. K'th smallest element of an unsorted array. 
 
 ### Answer 
 ```
@@ -9,10 +9,10 @@ var findSmallest = (arr,k)=>{
   return arr= k>0?arr[k-1]:"Value of k should be greater than 0"
 }
 ```
-## Question 2. 2nd smallest element of a sorted rotated array.
+## Question 2. K'th smallest element of a sorted rotated array.
 ### Answer 
 ```
-var findMin = (arr,low,high)=>{
+var findMin = (arr,low,high,k)=>{
   if(high<low){
     return arr[0]
   }
@@ -21,15 +21,15 @@ var findMin = (arr,low,high)=>{
   }
   let mid=Math.ceil(low+high/2);
   if(mid<high && arr[mid+1]<arr[mid]){
-    return arr[mid+2];
+    return arr[mid+k];
   }
   if(mid>low && arr[mid] < arr[mid - 1]){
-    return arr[mid+1];
+    return arr[mid+k];
   }
   if(arr[high]>arr[mid]){
-    findMin(arr, low, mid-1);
+    findMin(arr, low, mid-1,k);
   }else{
-    findMin(arr, mid+1, high);
+    findMin(arr, mid+1, high,k);
   }
   
 }

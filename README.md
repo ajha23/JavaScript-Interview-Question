@@ -6,7 +6,7 @@
 ```
 var findSmallest = (arr,k)=>{
    arr=arr.sort();
-  return arr= k>0?arr[k-1]:"Value of should be greater than 0"
+  return arr= k>0?arr[k-1]:"Value of k should be greater than 0"
 }
 ```
 ## Question 2. 2nd smallest element of a sorted rotated array.

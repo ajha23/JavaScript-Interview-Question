@@ -1,7 +1,8 @@
 # JavaScript-Interview-Question
 
 ##1) 2nd smallest element of an unsorted array. 
-###solution-
+
+### Answer 
 ```
 var findSmallest = (arr,k)=>{
    arr=arr.sort();
@@ -9,7 +10,7 @@ var findSmallest = (arr,k)=>{
 }
 ```
 ##2)2nd smallest element of a sorted rotated array.
-###solution-
+### Answer 
 ```
 var findMin = (arr,low,high)=>{
   if(high<low){
@@ -34,7 +35,8 @@ var findMin = (arr,low,high)=>{
 }
 ```
 ##3) First unique character of a string.
-###solution-
+
+### Answer 
 ```
 let firstUniqChar=(input)=>{
   let obj={};

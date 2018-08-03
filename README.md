@@ -34,7 +34,7 @@ var findMin = (arr,low,high,k)=>{
   
 }
 ```
-## Question. 3 First unique character of a string.
+## Question 3. First unique character of a string.
 
 ### Answer 
 ```
@@ -59,11 +59,11 @@ let firstUniqChar=(input)=>{
   
 }
 ```
-## Question. 4 Minimum distance between 2 words counting the number of characters from middle of both words.
-  - * Allow multiple separators in the split(Example: split(/[\s.,]/) )
-  - *  Account for the split char in the total length between words (i.e. index += word.length() + 1 )
-  - *  Allow for words in either order (Math.abs(word1Loc - word2Loc))
-  - *  Handle case where either word is not present
+## Question 4. Minimum distance between 2 words counting the number of characters from middle of both words.
+  - Allow multiple separators in the split(Example: split(/[\s.,]/) )
+  - Account for the split char in the total length between words (i.e. index += word.length() + 1 )
+  - Allow for words in either order (Math.abs(word1Loc - word2Loc))
+  - Handle case where either word is not present
 ### Answer
 ```
 let findMinimumDistance= (str,w1,w2)=>{

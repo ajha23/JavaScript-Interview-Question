@@ -59,3 +59,41 @@ let firstUniqChar=(input)=>{
   
 }
 ```
+## Question. 4 Minimum distance between 2 words counting the number of characters from middle of both words.
+  - * Allow multiple separators in the split(Example: split(/[\s.,]/) )
+  - *  Account for the split char in the total length between words (i.e. index += word.length() + 1 )
+  - *  Allow for words in either order (Math.abs(word1Loc - word2Loc))
+  - *  Handle case where either word is not present
+### Answer
+```
+let findMinimumDistance= (str,w1,w2)=>{
+let len1=w1.length,
+    len2=w2.length,
+    posW1=null,
+    posW2=null,
+    wlen= (len1+len2)/2,
+   arr=str.split(/[\s,.]/);
+  if(arr.includes(w1) && arr.includes(w2)){
+    
+    for(let val in arr){
+       if(arr[val] === w1){
+          posW1=val; 
+       }
+      if(arr[val] === w2){
+        posW2=val;
+       }
+  
+    }
+    let i = posW1<posW2 ? posW1 : posW2,
+       dist=0;
+    i=1+Number(i);
+   for(i;i<(posW1>posW2?posW1:posW2);i++){
+     dist+= arr[i].length;
+   } 
+    return dist+Math.abs(posW1-posW2)+wlen;
+  }
+
+ return -1;
+    
+}
+```
